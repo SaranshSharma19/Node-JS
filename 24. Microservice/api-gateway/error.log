@@ -1,0 +1,5 @@
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:34:29.860Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:37:30.945Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:39:35.422Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:42:33.102Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T06:14:16.681Z"}

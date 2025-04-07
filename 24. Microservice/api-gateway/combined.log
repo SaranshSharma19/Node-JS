@@ -1,0 +1,70 @@
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T05:33:51.060Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-03-25T05:33:51.064Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T05:33:51.064Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T05:34:29.849Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:34:29.850Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:34:29.860Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T05:36:43.077Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-03-25T05:36:43.081Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T05:36:43.082Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T05:37:30.937Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:37:30.937Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:37:30.945Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T05:39:28.011Z"}
+{"level":"info","message":"Identity service is running on port http://127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:39:28.015Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T05:39:28.015Z"}
+{"level":"info","message":"Received GET request to /ui/","service":"api-gateway","timestamp":"2025-03-25T05:39:31.384Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:39:31.385Z"}
+{"level":"info","message":"Received GET request to /ui/login","service":"api-gateway","timestamp":"2025-03-25T05:39:31.448Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:39:31.449Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T05:39:35.413Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:39:35.414Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:39:35.422Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T05:42:24.353Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-03-25T05:42:24.356Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T05:42:24.357Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T05:42:33.088Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:42:33.088Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T05:42:33.102Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T05:45:46.201Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-03-25T05:45:46.205Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T05:45:46.205Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T05:46:01.487Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:46:01.487Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"api-gateway","timestamp":"2025-03-25T05:46:01.525Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T05:46:14.742Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T05:46:14.743Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"api-gateway","timestamp":"2025-03-25T05:46:15.087Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:14:16.677Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:14:16.677Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-03-25T06:14:16.681Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:15:03.366Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:15:03.366Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"api-gateway","timestamp":"2025-03-25T06:15:03.487Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:20:05.322Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:20:05.322Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"api-gateway","timestamp":"2025-03-25T06:20:05.435Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:20:49.618Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:20:49.620Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"api-gateway","timestamp":"2025-03-25T06:20:49.696Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-03-25T06:21:27.126Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:21:27.127Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"api-gateway","timestamp":"2025-03-25T06:21:27.875Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:21:49.856Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:21:49.856Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"api-gateway","timestamp":"2025-03-25T06:21:49.917Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:22:54.114Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:22:54.114Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"api-gateway","timestamp":"2025-03-25T06:22:54.169Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:24:10.594Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:24:10.595Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-03-25T06:24:10.917Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-03-25T06:24:44.325Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-03-25T06:24:44.328Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-03-25T06:24:44.640Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T09:46:34.221Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-03-25T09:46:34.226Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T09:46:34.226Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-03-25T09:47:02.882Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-03-25T09:47:02.885Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-03-25T09:47:02.886Z"}

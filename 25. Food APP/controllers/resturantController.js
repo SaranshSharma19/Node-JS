@@ -57,7 +57,11 @@ const createResturantController = async (req, res) => {
 
 const getAllResturantController = async (req, res) => {
     try {
-        const resturants = await resturantModel.find({});
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 2;
+        const skip = (page - 1) * limit;
+        const totalCount = await resturantModel.countDocuments();
+        const resturants = await resturantModel.find({}).skip(skip).limit(limit);
         if (!resturants) {
             return res.status(404).send({
                 success: false,
@@ -66,7 +70,9 @@ const getAllResturantController = async (req, res) => {
         }
         res.status(200).send({
             success: true,
-            totalCount: resturants.length,
+            totalCount,
+            currentPage: page,
+            totalPages: Math.ceil(totalCount / limit),
             resturants,
         });
     } catch (error) {
@@ -134,9 +140,47 @@ const deleteResturantController = async (req, res) => {
     }
 };
 
+const searchResturantController = async (req, res) => {
+    try {
+        const searchTerm = req.query.search;
+        if (!searchTerm) {
+            return res.status(400).send({
+                success: false,
+                message: "Please provide a search term",
+            });
+        }
+
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 2;
+        const skip = (page - 1) * limit;
+        const resturants = await resturantModel.find({
+            title: { $regex: searchTerm, $options: "i" }
+        }).skip(skip).limit(limit);
+        const totalCount = await resturantModel.countDocuments({
+            title: { $regex: searchTerm, $options: "i" }
+        });
+
+        res.status(200).send({
+            success: true,
+            totalCount,
+            currentPage: page,
+            totalPages: Math.ceil(totalCount / limit),
+            resturants,
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({
+            success: false,
+            message: "Error In Search Resturant API",
+            error,
+        });
+    }
+};
+
 module.exports = {
     createResturantController,
     getAllResturantController,
     getResturantByIdController,
     deleteResturantController,
+    searchResturantController
 };

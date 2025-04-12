@@ -1,9 +1,13 @@
 const userModel = require("../models/userModel");
 const bcrypt = require("bcryptjs");
+const otpModel = require("../models/otpModel.js");
+const sendOtp = require('../services/otpService.js').sendOtp;
+const verifyOtp = require('../services/otpService.js').verifyOtp;
 
+
+const tempPasswordStore = {};
 const getUserController = async (req, res) => {
     try {
-
         const user = await userModel.findById({ _id: req.body.id });
 
         if (!user) {
@@ -76,7 +80,7 @@ const updatePasswordController = async (req, res) => {
         if (!oldPassword || !newPassword) {
             return res.status(500).send({
                 success: false,
-                message: "Please Provide Old or New PasswOrd",
+                message: "Please Provide Old or New Password",
             });
         }
 
@@ -109,19 +113,55 @@ const updatePasswordController = async (req, res) => {
 
 const resetPasswordController = async (req, res) => {
     try {
-        const { email, newPassword, answer } = req.body;
-        if (!email || !newPassword || !answer) {
+        const { email, newPassword } = req.body;
+        if (!email || !newPassword) {
             return res.status(500).send({
                 success: false,
                 message: "Please Privide All Fields",
             });
         }
-        const user = await userModel.findOne({ email, answer });
+        const user = await userModel.findOne({ email });
         if (!user) {
             return res.status(500).send({
                 success: false,
                 message: "User Not Found",
             });
+        }
+
+        const otp = await sendOtp(user.userName, email);
+        await otpModel.create({ email, otp });
+        tempPasswordStore["data"] = { email, newPassword };
+
+        return res.status(200).json({ message: "OTP sent to your email" });
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({
+            success: false,
+            message: "Eror In PASSWORD RESET API",
+            error,
+        });
+    }
+};
+
+const verifyResetPasswordOtp = async (req, res) => {
+    try {
+        const { otp } = req.body;
+        const userData = tempPasswordStore["data"];
+        if (!userData) {
+            return res.status(400).json({ message: "User data not found" });
+        }
+        const { email, newPassword } = userData;
+        const user = await userModel.findOne({ email });
+        if (!user) {
+            return res.status(500).send({
+                success: false,
+                message: "User Not Found",
+            });
+        }
+        const isValid = await verifyOtp(email, otp);
+
+        if (!isValid) {
+            return res.status(400).json({ message: "Invalid or expired OTP" });
         }
 
         var salt = bcrypt.genSaltSync(10);
@@ -133,14 +173,9 @@ const resetPasswordController = async (req, res) => {
             message: "Password Reset Successfully",
         });
     } catch (error) {
-        console.log(error);
-        res.status(500).send({
-            success: false,
-            message: "Eror In PASSWORD RESET API",
-            error,
-        });
+        res.status(500).json({ message: error.message });
     }
-};
+}
 
 const deleteProfileController = async (req, res) => {
     try {
@@ -164,5 +199,6 @@ module.exports = {
     updateUserController,
     updatePasswordController,
     resetPasswordController,
+    verifyResetPasswordOtp,
     deleteProfileController,
 };

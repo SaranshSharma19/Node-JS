@@ -29,7 +29,11 @@ const createCatController = async (req, res) => {
 
 const getAllCatController = async (req, res) => {
     try {
-        const categories = await categoryModel.find({});
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 2;
+        const skip = (page - 1) * limit;
+        const totalCount = await categoryModel.countDocuments();
+        const categories = await categoryModel.find({}).skip(skip).limit(limit);
         if (!categories) {
             return res.status(404).send({
                 success: false,
@@ -38,7 +42,9 @@ const getAllCatController = async (req, res) => {
         }
         res.status(200).send({
             success: true,
-            totalCat: categories.length,
+            totalCount,
+            currentPage: page,
+            totalPages: Math.ceil(totalCount / limit),
             categories,
         });
     } catch (error) {
@@ -111,9 +117,47 @@ const deleteCatController = async (req, res) => {
     }
 };
 
+const searchCategoryController = async (req, res) => {
+    try {
+        const searchTerm = req.query.search;
+        if (!searchTerm) {
+            return res.status(400).send({
+                success: false,
+                message: "Please provide a search term",
+            });
+        }
+
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 2;
+        const skip = (page - 1) * limit;
+        const category = await categoryModel.find({
+            title: { $regex: searchTerm, $options: "i" }
+        }).skip(skip).limit(limit);
+        const totalCount = await categoryModel.countDocuments({
+            title: { $regex: searchTerm, $options: "i" }
+        });
+
+        res.status(200).send({
+            success: true,
+            totalCount,
+            currentPage: page,
+            totalPages: Math.ceil(totalCount / limit),
+            category,
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({
+            success: false,
+            message: "Error In Search Category API",
+            error,
+        });
+    }
+};
+
 module.exports = {
     createCatController,
     getAllCatController,
     updateCatController,
     deleteCatController,
+    searchCategoryController
 };

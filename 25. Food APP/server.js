@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const connectDb = require('./config/db');
 const urlVersioning = require('./middleware/apiVersioning');
 const createBasicRateLimiter = require('./middleware/rateLimiting');
+const cookieParser = require("cookie-parser");
 
 dotenv.config();
 
@@ -13,9 +14,10 @@ connectDb();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(morgan('dev'))
-app.use(urlVersioning('v1'))
-const rateLimit = createBasicRateLimiter(2, 5 * 60 * 100)
+app.use(cookieParser());
+app.use(morgan('dev'));
+app.use(urlVersioning('v1'));
+const rateLimit = createBasicRateLimiter(2, 5 * 60 * 100);
 
 
 app.use("/api/v1/auth", rateLimit, require("./routes/authRoutes"));

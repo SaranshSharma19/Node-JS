@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-//function mmongodb dfatabase connection
+
 const connectDb = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URL);
@@ -8,4 +8,5 @@ const connectDb = async () => {
         console.log("DB Error", error);
     }
 };
+
 module.exports = connectDb;

@@ -23,19 +23,7 @@ router.get("/getByResturant/:id", getFoodByResturantController);
 router.put("/update/:id", authMiddleware, updateFoodController);
 router.delete("/delete/:id", authMiddleware, deleteFoodController);
 router.post("/placeorder", authMiddleware, placeOrderController);
-
-router.post(
-    "/orderStatus/:id",
-    authMiddleware,
-    adminMiddleware,
-    orderStatusController
-);
-
-router.get(
-    "/getAllOrders",
-    authMiddleware,
-    adminMiddleware,
-    getAllOrdersController
-);
+router.post("/orderStatus/:id", authMiddleware, adminMiddleware, orderStatusController)
+router.get("/getAllOrders", authMiddleware, adminMiddleware, getAllOrdersController);
 
 module.exports = router;

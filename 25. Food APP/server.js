@@ -19,7 +19,6 @@ app.use(morgan('dev'));
 app.use(urlVersioning('v1'));
 const rateLimit = createBasicRateLimiter(2, 5 * 60 * 100);
 
-
 app.use("/api/v1/auth", rateLimit, require("./routes/authRoutes"));
 app.use("/api/v1/user", require("./routes/userRoutes"));
 app.use("/api/v1/resturant", require("./routes/resturantRoutes"));

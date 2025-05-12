@@ -11,7 +11,6 @@ const logger = require("./utils/logger");
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-//connect to mongodb
 mongoose
     .connect(process.env.MONGODB_URI)
     .then(() => logger.info("Connected to mongodb"))
@@ -29,8 +28,6 @@ app.use((req, res, next) => {
     logger.info(`Request body, ${req.body}`);
     next();
 });
-
-//*** Homework - implement Ip based rate limiting for sensitive endpoints
 
 //routes -> pass redisclient to routes bcoz we are using this redis client in our controllers
 app.use(
@@ -57,8 +54,7 @@ async function startServer() {
 
 startServer();
 
-//unhandled promise rejection
-
+//unhandled promise rejectio
 process.on("unhandledRejection", (reason, promise) => {
     logger.error("Unhandled Rejection at", promise, "reason:", reason);
 });

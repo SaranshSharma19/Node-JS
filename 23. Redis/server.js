@@ -4,7 +4,7 @@ const client = redis.createClient({
     host: 'localhost',
     port: 6379 
 })
-
+ 
 // event listener
 client.on('error', (err) => {
     console.log('Redis client error occured!', err)

@@ -8,7 +8,6 @@ const { validateRegistration, validatelogin } = require("../utils/validation");
 const resgiterUser = async (req, res) => {
     logger.info("Registration endpoint hit...");
     try {
-        // validate the schema
         const { error } = validateRegistration(req.body)
         if (error) {
             logger.warn("Validation error", error.details[0].message);
@@ -82,7 +81,6 @@ const loginUser = async (req, res) => {
                 message: "Invalid password",
             });
         }
-
         const { accessToken, refreshToken } = await generateTokens(user);
 
         res.json({
@@ -137,7 +135,6 @@ const refreshTokenUser = async (req, res) => {
         const { accessToken: newAccessToken, refreshToken: newRefreshToken } =
             await generateTokens(user);
 
-        //delete the old refresh token
         await RefreshToken.deleteOne({ _id: storedToken._id });
 
         res.json({
@@ -173,6 +170,7 @@ const logoutUser = async (req, res) => {
         res.json({
             success: true,
             message: "Logged out successfully!",
+            
         });
     } catch (e) {
         logger.error("Error while logging out", e);

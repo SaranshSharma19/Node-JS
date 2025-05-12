@@ -183,3 +183,95 @@
 {"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-25T06:33:45.078Z"}
 {"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-25T06:53:05.015Z"}
 {"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-25T06:53:05.829Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:36:47.135Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:36:49.036Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:36:57.754Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:36:57.759Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:43:46.108Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:43:47.931Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:44:47.232Z"}
+{"level":"error","message":"Redis connection error Redis is already connecting/connected","service":"identity-service","stack":"Error: Redis is already connecting/connected\n    at /home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:107:24\n    at new Promise (<anonymous>)\n    at EventEmitter.connect (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:103:25)\n    at Object.<anonymous> (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/src/server.js:24:13)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)\n    at Module._load (node:internal/modules/cjs/loader:1024:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n    at node:internal/main/run_main_module:28:49","timestamp":"2025-04-24T07:44:47.237Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:44:48.971Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:44:57.849Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:44:57.859Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:45:01.869Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:45:03.181Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:45:16.708Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:45:17.504Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:45:18.588Z"}
+{"level":"error","message":"Redis connection error Redis is already connecting/connected","service":"identity-service","stack":"Error: Redis is already connecting/connected\n    at /home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:107:24\n    at new Promise (<anonymous>)\n    at EventEmitter.connect (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:103:25)\n    at connectToRedis (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/src/server.js:26:27)\n    at Object.<anonymous> (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/src/server.js:32:1)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)\n    at Module._load (node:internal/modules/cjs/loader:1024:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)","timestamp":"2025-04-24T07:45:18.592Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:45:19.467Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:45:29.313Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:45:29.319Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:46:02.170Z"}
+{"level":"error","message":"Redis connection error Redis is already connecting/connected","service":"identity-service","stack":"Error: Redis is already connecting/connected\n    at /home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:107:24\n    at new Promise (<anonymous>)\n    at EventEmitter.connect (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:103:25)\n    at connectToRedis (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/src/server.js:26:27)\n    at Object.<anonymous> (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/src/server.js:32:1)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)\n    at Module._load (node:internal/modules/cjs/loader:1024:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)","timestamp":"2025-04-24T07:46:02.174Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:46:04.112Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:46:12.743Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:46:12.749Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:46:57.187Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:46:59.228Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:47:01.910Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:47:11.001Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:47:11.978Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:49:14.085Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:49:15.182Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:49:15.952Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:49:24.986Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:49:24.990Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:49:25.751Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:49:29.569Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:49:30.656Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:49:31.600Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:49:44.395Z"}
+{"level":"error","message":"Redis connection error Redis is already connecting/connected","service":"identity-service","stack":"Error: Redis is already connecting/connected\n    at /home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:107:24\n    at new Promise (<anonymous>)\n    at EventEmitter.connect (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/node_modules/ioredis/built/Redis.js:103:25)\n    at Object.<anonymous> (/home/saransh.sharma/Desktop/node/24. Microservice/identity-service/src/server.js:24:13)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)\n    at Module._load (node:internal/modules/cjs/loader:1024:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n    at node:internal/main/run_main_module:28:49","timestamp":"2025-04-24T07:49:44.402Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:49:46.494Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:49:55.095Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:49:55.107Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:51:23.683Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:51:28.307Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:51:34.261Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:51:34.265Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:52:56.627Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:55:14.800Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:55:16.750Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T07:56:59.622Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T07:57:03.009Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:57:10.259Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-04-24T07:57:10.263Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-04-24T07:58:50.965Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-04-24T07:59:26.342Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T08:00:38.172Z"}
+{"level":"info","message":"Connected to Redis","service":"identity-service","timestamp":"2025-04-24T08:00:38.184Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T08:00:39.287Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T08:03:05.572Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T08:03:06.901Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T08:03:09.012Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T08:03:09.948Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"identity-service","timestamp":"2025-04-24T09:58:18.567Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T09:58:18.568Z"}
+{"level":"info","message":"Registration endpoint hit...","service":"identity-service","timestamp":"2025-04-24T09:58:18.576Z"}
+{"buffer":{"data":[104,10,11,60,51,95,107,48,29,149,31,151],"type":"Buffer"},"level":"warn","message":"User saved successfully","service":"identity-service","timestamp":"2025-04-24T09:58:20.891Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-24T09:59:19.908Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-24T09:59:20.834Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-24T10:00:16.802Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T10:00:16.803Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-24T10:00:16.807Z"}
+{"level":"warn","message":"Invalid password","service":"identity-service","timestamp":"2025-04-24T10:00:16.985Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-24T10:00:22.392Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T10:00:22.392Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-24T10:00:22.393Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-04-24T10:21:10.623Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T10:21:10.624Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-04-24T10:21:10.626Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-24T10:21:29.486Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T10:21:29.487Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-24T10:21:29.488Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-04-24T10:21:45.028Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T10:21:45.029Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-04-24T10:21:45.031Z"}
+{"level":"warn","message":"Invalid or expired refresh token","service":"identity-service","timestamp":"2025-04-24T10:21:45.262Z"}
+{"level":"info","message":"Received POST request to /api/auth/refresh-token","service":"identity-service","timestamp":"2025-04-24T10:21:56.248Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-24T10:21:56.250Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-04-24T10:21:56.253Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-04-30T05:59:55.243Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-04-30T05:59:55.791Z"}

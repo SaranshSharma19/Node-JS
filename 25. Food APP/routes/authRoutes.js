@@ -4,9 +4,7 @@ const {
     loginController,
     verifyRegistrationOtp,
     verifyLoginOtp,
-    logoutUser,
-    googleAuthController,
-    googleCallbackController
+    logoutUser
 } = require("../controllers/authControllers");
 
 const router = express.Router();

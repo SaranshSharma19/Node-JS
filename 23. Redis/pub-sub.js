@@ -28,30 +28,28 @@ async function testAdditionalFeatures() {
 
         // await subscriber.unsubscribe('dummy-channel')
 
-        // await subscriber.quit();
-
         // pipelining & transaction 
         // pipelining is a process of sending multiple request to redis in a batch
         // transaction is used to run multiple command as a single unit in redis
+        // Transaction
+        const transaction = client.multi();
+        transaction.set('key-transaction1', 'value1');
+        transaction.set('key-transaction2', 'value2');
+        transaction.get('key-transaction1');
+        transaction.get('key-transaction2');
 
-        const multi = client.multi()
-        multi.set('key-transaction1', 'value1')
-        multi.set('key-transaction2', 'value2')
-        multi.get('key-transaction1')
-        multi.get('key-transaction2')
+        const transactionResult = await transaction.exec();
+        console.log('Transaction Result:', transactionResult);
 
-        const result = await multi.exec();
-        console.log(result)
+        // Pipeline
+        const pipeline = client.pipeline();
+        pipeline.set('key-pipeline1', 'value1');
+        pipeline.set('key-pipeline2', 'value2');
+        pipeline.get('key-pipeline1');
+        pipeline.get('key-pipeline2');
 
-
-        const pipeline = client.multi()
-        pipeline.set('key-pipeline1', 'value1')
-        pipeline.set('key-pipeline2', 'value2')
-        pipeline.get('key-pipeline1')
-        pipeline.get('key-pipeline2')
-        const pipelineresult = await pipeline.exec();
-        console.log(pipelineresult)
-
+        const pipelineResult = await pipeline.exec();
+        console.log('Pipeline Result:', pipelineResult);
 
         // batch data operations
         const pipelineOne = client.multi()
@@ -77,8 +75,7 @@ async function testAdditionalFeatures() {
 
         for (let i = 0; i < 1000; i++) {
             bigPipeline.set(`user_pipeline_key${i}`, `user_pipeline_value${i}`);
-        }
-
+        }   
         await bigPipeline.exec();
 
         console.timeEnd("with pipelining");

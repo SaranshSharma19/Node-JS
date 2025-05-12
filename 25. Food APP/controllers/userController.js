@@ -80,7 +80,7 @@ const updatePasswordController = async (req, res) => {
         if (!oldPassword || !newPassword) {
             return res.status(500).send({
                 success: false,
-                message: "Please Provide Old or New Password",
+                message: "Please Provide Old and New Password",
             });
         }
 
@@ -167,6 +167,7 @@ const verifyResetPasswordOtp = async (req, res) => {
         var salt = bcrypt.genSaltSync(10);
         const hashedPassword = await bcrypt.hash(newPassword, salt);
         user.password = hashedPassword;
+        delete tempUserStore["data"];
         await user.save();
         res.status(200).send({
             success: true,

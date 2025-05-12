@@ -19,7 +19,6 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-//rate limiting
 const ratelimitOptions = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 100,
@@ -55,7 +54,6 @@ const proxyOptions = {
     },
 };
 
-//setting up proxy for our identity service
 app.use(
     "/v1/auth",
     proxy(process.env.IDENTITY_SERVICE_URL, {
@@ -68,13 +66,11 @@ app.use(
             logger.info(
                 `Response received from Identity service: ${proxyRes.statusCode}`
             );
-
             return proxyResData;
         },
     })
 );
 
-//setting up proxy for our post service
 app.use(
     "/v1/posts",
     validateToken,
